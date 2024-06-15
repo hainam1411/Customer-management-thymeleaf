@@ -7,11 +7,17 @@
 <h3>Customers</h3>
 <p>
     <a th:href="@{/customers/create}">
-        Add new customer
+        Add new custom
+
     </a>
 </p>
+<div class="notify">
+    <div th:if="${success}">
+        <span th:text="${success}"> </span>
+    </div>
+</div>
 
-<table id = "customers">
+<table id="customers">
     <thead>
     <tr>
         <th>Name</th>
